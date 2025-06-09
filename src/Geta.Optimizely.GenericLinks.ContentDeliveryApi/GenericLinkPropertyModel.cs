@@ -28,10 +28,11 @@ public class GenericLinkPropertyModel<T> : PropertyModel<T, PropertyLinkData<T>>
 
     private T GetValue(T link)
     {
-        if (link is null)
+        if (link?.Clone() is not T result)
             return null;
 
-        link.Href = _urlResolver.GetUrl(link.GetMappedHref());
-        return link;
+
+        result.Href = _urlResolver.GetUrl(link.GetMappedHref());
+        return result;
     }
 }

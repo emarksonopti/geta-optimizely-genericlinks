@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.3]
+
+### Fixed
+
+- Fix for language handling from #35 and #36. Thanks to (emarksonopti)[https://github.com/emarksonopti].
+
 ## [2.0.2]
 
 ### Added
